@@ -1,0 +1,8 @@
+.imagem-carrossel {
+    height: 400px;
+    object-fit: cover;
+}
+
+.imagem-carrossel-um {
+    object-position: 0 90%;
+}
