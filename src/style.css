@@ -15,6 +15,15 @@
     color: darkred;
 }
 
+.card-wid {
+ max-width: 18rem;
+}
+
+.card-imagem {
+    object-fit: cover;
+    height: 200px;
+}
+
 .btn-cor {
     background-color: darkred;
     color: #fff;
