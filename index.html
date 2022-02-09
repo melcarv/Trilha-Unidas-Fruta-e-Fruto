@@ -13,7 +13,7 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand font-titulo cor-especial" href="#">fruta & fruto</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,10 +21,10 @@
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
             <ul class="navbar-nav">
-              <li><a class="nav-link active" aria-current="page" href="#">início</a></li>
+              <li><a class="nav-link active" aria-current="page" href="#" >Início</a></li>
               <li><a class="nav-link" href="#">receitas</a></li>
               <li><a class="nav-link" href="#">quem somos</a></li>
-              <li><a class="nav-link" href="#">contato</a></li>
+              <li><a data-bs-toggle="modal" data-bs-target="#modal-contato" class="nav-link" href="#">contato</a></li>
             </ul>
           </div>
         </div>
@@ -118,7 +118,36 @@
         </div>
       </section>
     </main>
-      
+<!-- Modal -->
+    <div class="modal fade" id="modal-contato" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Contato</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="formGroupExampleInput" class="form-label">Nome:</label>
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Insira seu nome completo">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">E-mail:</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email@email.com">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Deixe seu comentário</label>
+              <textarea class="form-control"  placeholder="Insira aqui seu comentário" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            <button type="button" class="btn btn-cor">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
       
       
       
