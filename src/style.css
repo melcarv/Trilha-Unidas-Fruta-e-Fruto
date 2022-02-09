@@ -10,3 +10,17 @@
 .font-titulo {
     font-family: 'Pacifico', cursive;
 }
+
+.cor-especial {
+    color: darkred;
+}
+
+.btn-cor {
+    background-color: darkred;
+    color: #fff;
+    border: none;
+}
+
+.btn-border {
+    border: 1px solid darkred;
+}
